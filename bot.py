@@ -4,7 +4,7 @@ from typing import Union
 from pyromod import listen
 from pyrogram import Client as RawClient
 from pyrogram.storage import Storage
-from configs import Config
+from plugins.config import Config
 from bot.core.new import New
 
 logger = Config.LOGGER
