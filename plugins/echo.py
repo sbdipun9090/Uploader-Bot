@@ -280,7 +280,7 @@ async def echo(bot, update):
         ])
         reply_markup = InlineKeyboardMarkup(inline_keyboard)
         await chk.delete(True)
-        await bot.send_message(
+        await bot.reply_text(
             chat_id=update.chat.id,
             text=Translation.FORMAT_SELECTION,
             reply_markup=reply_markup,
