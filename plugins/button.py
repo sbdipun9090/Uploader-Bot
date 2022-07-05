@@ -83,9 +83,7 @@ async def youtube_dl_call_back(bot, update):
                 o = entity.offset
                 l = entity.length
                 youtube_dl_url = youtube_dl_url[o:o + l]
-    await update.message.edit_caption(
-        caption=Translation.DOWNLOAD_START,
-        parse_mode=enums.ParseMode.HTML
+    await bot.edit_text(Translation.DOWNLOAD_START
     )
     description = Translation.CUSTOM_CAPTION_UL_FILE
     if "fulltitle" in response_json:
@@ -197,10 +195,8 @@ async def youtube_dl_call_back(bot, update):
     ad_string_to_replace = "please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output."
     if e_response and ad_string_to_replace in e_response:
         error_message = e_response.replace(ad_string_to_replace, "")
-        await update.message.edit_caption(
-            parse_mode=enums.ParseMode.HTML,
-            text=error_message
-        )
+        await bot.edit_text(error_message
+       )
         Config.ONE_BY_ONE.remove(update.from_user.id)
         total_req_get = total_req
         b_json["users"].pop(user_count - 1)
@@ -238,10 +234,7 @@ async def youtube_dl_call_back(bot, update):
             pass
 
         if file_size > Config.TG_MAX_FILE_SIZE:
-            await update.message.edit_caption(
-                
-                caption=Translation.RCHD_TG_API_LIMIT.format(time_taken_for_download, humanbytes(file_size)),
-                parse_mode=enums.ParseMode.HTML
+            await bot.edit_text(Translation.RCHD_TG_API_LIMIT.format(time_taken_for_download, humanbytes(file_size))
             )
         else:
             is_w_f = False
