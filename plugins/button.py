@@ -341,7 +341,7 @@ async def youtube_dl_call_back(bot, update):
                 os.remove(thumbnail)
             except:
                 pass
-            await bot.edit_text.Translation.AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS.format(time_taken_for_download, time_taken_for_upload)
+            await bot.edit_text(Translation.AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS.format(time_taken_for_download, time_taken_for_upload)
             )
             Config.ONE_BY_ONE.remove(update.from_user.id)
             total_req_get = total_req
