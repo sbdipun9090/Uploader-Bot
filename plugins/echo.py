@@ -120,12 +120,9 @@ async def echo(bot, update):
         command_to_exec.append("--password")
         command_to_exec.append(youtube_dl_password)
     logger.info(command_to_exec)
-    chk = await bot.send_message(
-            chat_id=update.chat.id,
-            text=f'⌛ Analysing...!',
-            disable_web_page_preview=True,
-            reply_to_message_id=update.id,
-            parse_mode=enums.ParseMode.HTML
+    chk = await bot.reply_text(
+            Translation.CHECK_LINK,
+            disable_web_page_preview=True
           )
     process = await asyncio.create_subprocess_exec(
         *command_to_exec,
@@ -147,11 +144,10 @@ async def echo(bot, update):
             error_message += Translation.SET_CUSTOM_USERNAME_PASSWORD
         await chk.delete()
         time.sleep(1)
-        await bot.send_message(
-            chat_id=update.chat.id,
-            text=Translation.NO_VOID_FORMAT_FOUND.format(str(error_message)),
-            reply_to_message_id=update.id,
-            parse_mode=enums.ParseMode.HTML,
+        await bot.reply_text(
+            Translation.NO_VOID_FORMAT_FOUND.format(str(error_message)),
+            
+            
             disable_web_page_preview=True
         )
         return False
@@ -258,12 +254,10 @@ async def echo(bot, update):
             ])
         reply_markup = InlineKeyboardMarkup(inline_keyboard)
         await chk.delete()
-        await bot.send_message(
-            chat_id=update.chat.id,
-            text=Translation.FORMAT_SELECTION.format(Thumbnail) + "\n" + Translation.SET_CUSTOM_USERNAME_PASSWORD,
+        await bot.reply_text(
+            Translation.FORMAT_SELECTION.format(Thumbnail) + "\n" + Translation.SET_CUSTOM_USERNAME_PASSWORD,
             reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML,
-            reply_to_message_id=update.id
+            disable_web_page_preview=True
         )
     else:
         # fallback for nonnumeric port a.k.a seedbox.io
@@ -281,10 +275,8 @@ async def echo(bot, update):
         reply_markup = InlineKeyboardMarkup(inline_keyboard)
         await chk.delete(True)
         await bot.reply_text(
-            chat_id=update.chat.id,
-            text=Translation.FORMAT_SELECTION,
+            Translation.FORMAT_SELECTION,
             reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML,
-            reply_to_message_id=update.id
+            disable_web_page_preview=True
         )
 
