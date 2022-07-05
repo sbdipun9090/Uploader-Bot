@@ -254,9 +254,8 @@ async def youtube_dl_call_back(bot, update):
                 9
             )
             logger.info(images)'''
-            await update.message.edit_caption(
-                caption=Translation.UPLOAD_START,
-                parse_mode=enums.ParseMode.HTML
+            await bot.edit_text(Translation.UPLOAD_START
+              
             )
 
             # ref: message from @Sources_codes
@@ -268,7 +267,7 @@ async def youtube_dl_call_back(bot, update):
                     document=download_directory,
                     thumb=thumbnail,
                     caption=description,
-                    parse_mode=enums.ParseMode.HTML,
+                    #parse_mode=enums.ParseMode.HTML,
                     #reply_to_message_id=update.id,
                     progress=progress_for_pyrogram,
                     progress_args=(
@@ -288,7 +287,7 @@ async def youtube_dl_call_back(bot, update):
                     width=width,
                     height=height,
                     supports_streaming=True,
-                    parse_mode=enums.ParseMode.HTML,
+                    #parse_mode=enums.ParseMode.HTML,
                     thumb=thumb_image_path,
                     #reply_to_message_id=update.id,
                     progress=progress_for_pyrogram,
@@ -305,7 +304,7 @@ async def youtube_dl_call_back(bot, update):
                     #chat_id=update.message.chat.id,
                     audio=download_directory,
                     caption=description,
-                    parse_mode=enums.ParseMode.HTML,
+                    #parse_mode=enums.ParseMode.HTML,
                     duration=duration,
                     thumb=thumbnail,
                     #reply_to_message_id=update.id,
