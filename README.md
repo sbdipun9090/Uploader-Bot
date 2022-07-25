@@ -7,7 +7,7 @@
 
 
 ```
-Scrapped some code from @SpEcHIDe's AnyDLBot Repository
+Scrapped some code from @SpEcHIDe's AnyDLBot Repository and @ClintonAbraham Uploader Bot Repository 
 Made with Python3
 
 Thanks To Clinton Abraham
