@@ -13,7 +13,7 @@
     "uploader"
   ],
   "website": "https://github.com/Tellybots",
-  "logo": "",
+  "logo": "https://telegra.ph/file/f95edf56a53e929e359c1.jpg",
   "repository": "https://github.com/PlanetBots",
   "env": {
     "WEBHOOK": {
