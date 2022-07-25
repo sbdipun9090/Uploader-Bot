@@ -1,17 +1,4 @@
-# Uploader-Bot
-A Modified Telegram Url Uploader Bot With Mongodb, Zee5, Sonyliv Support and Many Other Yt-dlp Sites
-</p>
-<p align="center">
-  <a href="https://github.com/MRK-YT/MT-URL-Uploader/stargazers">
-    <img src="https://img.shields.io/github/stars/MRK-YT/MT-URL-Uploader?style=social">
 
-  </a>
-  
-  <a href="https://github.com/MRK-YT/MT-URL-Uploader/fork">
-    <img src="https://img.shields.io/github/forks/MRK-YT/MT-URL-Uploader?style=Fork&style=social">
-
-  </a>  
-</p>
 
 ```
 Scrapped some code from @SpEcHIDe's AnyDLBot Repository
