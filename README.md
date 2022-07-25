@@ -49,8 +49,5 @@ Check How To Make MONGODB URL on YouTube `https://youtu.be/aXlF80Cn7iU`
 * `UPDATES_CHANNEL` Get it From @TheIdentityBot
 
 ```
-Credit- 1) Clinton Abraham
-2) Abir Hassan 
-3) ShriMadhavUk
-4) Dans
+Credits to Clinton Abraham, Abir Hassan ,ShriMadhavUk, Dans
 ```
