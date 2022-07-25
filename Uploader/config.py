@@ -50,7 +50,7 @@ class Config(object):
     LOGGER = logging
     OWNER_ID = int(os.environ.get("OWNER_ID", "1164918935"))
     # Update channel for Force Subscribe
-    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
+    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1001531527328")
     TG_MIN_FILE_SIZE = 2097152000
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "TellyUploaderBot")
     PRO_USERS = list(set(int(x) for x in os.environ.get("PRO_USERS", "0").split()))
