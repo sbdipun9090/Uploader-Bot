@@ -33,17 +33,17 @@ python3 bot.py
 
 Required Variables 🔊
 
-* `APP_ID` Get it From mytelegram.org
+☞ `APP_ID` Get it From mytelegram.org
 
-* `API_HASH` Get it From mytelegram.org
+☞ `API_HASH` Get it From mytelegram.org
 
-* `BOT_TOKEN` Get it From BotFather
+☞ `BOT_TOKEN` Get it From BotFather
 
-* `DATABASE_URL` Get It From MongoDB Web
+☞ `DATABASE_URL` Get It From MongoDB Web
 Check How To Make MONGODB URL on YouTube `https://youtu.be/aXlF80Cn7iU`
 
-* `OWNER_ID` Get it From @TheIdentityBot
+☞ `OWNER_ID` Get it From @TheIdentityBot
 
-* `LOG_CHANNEL` Create a Private Channel and Send Any Message To That Channel and Forward to @TheIdentityBot to Get Channel Id
+☞ `LOG_CHANNEL` Create a Private Channel and Send Any Message To That Channel and Forward to @TheIdentityBot to Get Channel Id
 
-* `UPDATES_CHANNEL` Get it From @TheIdentityBot
+☞ `UPDATES_CHANNEL` Get it From @TheIdentityBot
